@@ -18,16 +18,25 @@ REQUIREMENTS:
 # Get user age information
 age = int(input("Enter your age here: "))
 
-#Determine price and show the user
+# Price options:
 
-if age >= 65:
-    print(f"\n Your price is $12.95 due to senior discount")
-    if age >= 12:
-        print:f"\n You must pay the standard $16.95"
-    else:
-        print:(f"\n Determining... Please Wait")
+age_price = age 
+standard_price = 16.95
+senior_discount = 12.95
+
+# Determine price and show the user
+
+if age < 1:
+    print(f"\n Those under 1 don't have to pay.")
+elif age <= 11:
+        print(f"\n You must pay ${age_price:,.2f}")
+        print(f"\n Have a good day!")
+elif age <= 64:
+    print(f"\n You must pay the standard ${standard_price:,.2f}")
+    print(f"\n Have a good day!")
 else:
-    if age > 1:
-        print(f"\n You must pay ${age:,.2f}")
+    if age >= 65:
+        print(f"\n Your price is ${senior_discount:,.2f} due to senior discount")
+        print(f"\n Have a good day!")
     else:
-        print(f"\n Those under 1 don't have to pay, the price is $0.00.")
+        print(f"\n Something went wrong!")
