@@ -28,6 +28,7 @@ senior_discount = 12.95
 
 if age < 1:
     print(f"\n Those under 1 don't have to pay.")
+    print(f"\n Have a good day!")
 elif age <= 11:
         print(f"\n You must pay ${age_price:,.2f}")
         print(f"\n Have a good day!")
@@ -39,4 +40,5 @@ else:
         print(f"\n Your price is ${senior_discount:,.2f} due to senior discount")
         print(f"\n Have a good day!")
     else:
+
         print(f"\n Something went wrong!")
